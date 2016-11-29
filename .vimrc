@@ -43,8 +43,6 @@ Plugin 'honza/vim-snippets'
 
 Plugin 'nvie/vim-flake8'
 
-Plugin 'haesken/vimclojure-vundle'
-
 Plugin 'derekwyatt/vim-scala'
 
 Plugin 'vim-scripts/csv.vim'
@@ -69,6 +67,7 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-tab>"
 
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'bling/vim-airline'
 let g:airline_powerline_fonts=0
 if !exists('g:airline_symbols')
