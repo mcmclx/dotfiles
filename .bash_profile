@@ -6,7 +6,6 @@ alias ssh='ssh -A -X'
 alias macvim='mvim'
 alias ipython='/usr/local/bin/ipython --classic --no-confirm-exit'
 alias grep='grep --color=auto'
-alias scp='scp -c arcfour -C'
 alias identify='identify -verbose'
 alias locate='mdfind -name'
 
