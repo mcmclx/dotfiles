@@ -39,6 +39,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'godlygeek/tabular'
 
+Plugin 'Townk/vim-autoclose'
+
 Plugin 'nvie/vim-flake8'
 
 Plugin 'majutsushi/tagbar'
