@@ -12,6 +12,8 @@ set softtabstop=4
 set textwidth=80
 set smarttab
 set expandtab
+set hlsearch
+set smartcase
 
 set wildmenu
 set wildmode=longest:full,full
