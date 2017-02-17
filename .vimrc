@@ -41,14 +41,21 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'godlygeek/tabular'
 
-Plugin 'Townk/vim-autoclose'
+" vim-autoclose was causing problems with YouCompleteMe
+" see: https://github.com/Valloric/YouCompleteMe/issues/9
+"Plugin 'Townk/vim-autoclose'
+Plugin 'Raimondi/delimitMate'
 
 Plugin 'nvie/vim-flake8'
 
 Plugin 'majutsushi/tagbar'
 
+Plugin 'bling/vim-bufferline'
+
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_filetype_blacklist = { 'asciidoc': 1, 'markdown': 1, 'org': 1 }
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
