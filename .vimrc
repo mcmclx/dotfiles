@@ -25,7 +25,11 @@ function! SetPythonOptions()
 endfunction
 
 " Always call flake8 when saving a python file
-autocmd BufWritePost *.py call Flake8()
+"autocmd BufWritePost *.py call Flake8()
+
+" Always call Yapf when saving a python file
+autocmd BufWritePost *.py call Yapf()
+
 
 " Begin Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -46,14 +50,17 @@ Plugin 'godlygeek/tabular'
 "Plugin 'Townk/vim-autoclose'
 Plugin 'Raimondi/delimitMate'
 
-Plugin 'nvie/vim-flake8'
+" Using Yapf now
+"Plugin 'nvie/vim-flake8'
 
 Plugin 'majutsushi/tagbar'
+
+Plugin 'mindriot101/vim-yapf'
 
 Plugin 'bling/vim-bufferline'
 
 Plugin 'Valloric/YouCompleteMe'
-let g:ycm_filetype_blacklist = { 'asciidoc': 1, 'markdown': 1, 'org': 1 }
+let g:ycm_filetype_whitelist = {'python': 1, 'cpp': 1, 'c': 1}
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
