@@ -28,8 +28,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Prompt for a command to run
-map <Leader>vp :VimuxPromptCommand<CR>
+" Prompt for a command to run within a new tmux split
+nnoremap <silent> vp :VimuxPromptCommand<CR>
 
 " Python Customizations
 autocmd FileType python call SetPythonOptions()
