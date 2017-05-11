@@ -5,6 +5,7 @@ filetype off
 syntax on
 set nu
 set nowrap
+set ic
 
 set tabstop=4
 set shiftwidth=4
